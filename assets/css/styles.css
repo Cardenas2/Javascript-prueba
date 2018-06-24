@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #FDFDFA;
+	font-family: 'Titillium Web', sans-serif;
+}
+.header{
+	background:url(../images/fondo.header.png);
+	padding: 2em;
+	
+}
+
+.header .header__title{
+	color: #C70039;
+	text-align: center;
+	font-weight:bold;
+}
+.caj-form{
+	border-radius: 5px;
+	padding: 1em;
+	margin-bottom: 1em;
+	border:1px solid #E3EAE8;
+}
+.caj-twett{
+	border-radius: 5px;
+	margin:0 0.5em 0.5em 0.5em;
+	
+}
+.caj-twett__indiv{
+	margin:0 0 2em 0;
+	padding: 1em;
+	border-radius: 5px;
+	border:1px solid #E3EAE8;
+}
+.fot-perfil{
+	width: 150px;
+	padding: 0.5em;
+}
+
+.fot-perfil__twett{
+	width: 100px;
+	border-radius: 50%;
+	padding: 0.5em;
+	border-bottom: 1px solid #E3EAE8; 
+	background-color: #fefefe;
+}
