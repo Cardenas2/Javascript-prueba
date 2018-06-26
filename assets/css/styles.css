@@ -6,48 +6,67 @@ body{
 	background-color: #FDFDFA;
 	font-family: 'Titillium Web', sans-serif;
 }
-.header{
+header{
 	background:url(../images/fondo.header.png);
-	padding: 2em;
-	
+	padding: 2em;	
 }
 
-.header .header__title{
+.tweet__title{
 	color: #C70039;
 	text-align: center;
 	font-weight:bold;
 }
-.caj-form{
-	border-radius: 5px;
-	padding: 1em;
-	margin-bottom: 1em;
-	border:1px solid #E3EAE8;
+
+.tweet__fila{
+	margin-top: 2em;
 }
-.caj-twett{
+
+.tweet__cajform{
 	border-radius: 5px;
-	margin:0 0.5em 0.5em 0.5em;
+	border:1px solid #EAECEC;
+	padding: 1em;
+}
+
+.tweet__publicaciones{
+	margin-top: 2em;
+}
+
+@media screen and (min-width: 570px){
 	
+	.tweet__publicaciones{
+	margin-top: 0;
+	}
+
+
 }
-.caj-twett__indiv{
-	margin:0 0 2em 0;
-	padding: 1em;
+.tweet__cajpubli{
 	border-radius: 5px;
-	border:1px solid #E3EAE8;
+	border:1px solid #EBEFEE;
+	padding: 1em;
 }
-.fot-perfil{
-	width: 150px;
+
+.tweet__fotperfil{
+	width: 180px;
+	margin-bottom:1em;
 	padding: 0.5em;
 }
 
-.fot-perfil__twett{
+.tweet__cajpubli-img{
 	width: 100px;
 	border-radius: 50%;
 	padding: 0.5em;
-	border-bottom: 1px solid #E3EAE8; 
-	background-color: #fefefe;
+	border:1px solid  #F29F9F  ;
 }
-
-i.iconos{
-	padding: 0.5em; 
+.tweet__cajpubli-opinion{
+	border-top:1px solid #EBEFEE;
+	padding-top: 1em;
+}
+.tweet__cajpubli-grupoicon{
+	border-top:1px solid #EBEFEE;
+}
+.tweet__cajpubli-icono{
+	text-align: center;
 	font-size: 1.5em;
+	margin:1em 0;
+	padding-right: 0.5em: 
 }
