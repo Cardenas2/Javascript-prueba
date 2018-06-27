@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/styles.css">
-	<link rel="stylesheet" href="assets/js/jquery.js">
 </head>
 <body>
 	
@@ -23,16 +22,17 @@
 		<div class="row tweet__fila">
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 tweet__formulario">
 				<div class="tweet__cajform">
-
-					<img src="assets/images/fot-persona.png" class="img-fluid mx-auto d-block tweet__fotperfil" alt="foto de perfil">
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="customFile">
-						<label class="custom-file-label" for="customFile">Elige tu imagen</label>
-					</div>
-					<input type="text" class="form-control my-3" placeholder="Escribe tu nombre">
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Que estas pensando?"></textarea>
-					
-					<button type="submit" class="btn btn-success btn-lg btn-block mt-3">Envia tu twett</button>
+					<form id="formulario" action="">
+						<img id="imagen" src="assets/images/fot-persona.png" class="img-fluid mx-auto d-block tweet__fotperfil" alt="foto de perfil">
+						<div class="custom-file">
+							<input id="uploader" type="file" class="custom-file-input tweet__fotperfil--imagen" id="customFile">
+							<label class="custom-file-label" for="customFile">Elige tu imagen</label>
+						</div>
+						<input id="nombre" type="text" class="form-control my-3" placeholder="Escribe tu nombre">
+						<textarea id="mensaje" class="form-control tweet__fotperfil--mensaje" id="exampleFormControlTextarea1" rows="3" placeholder="Que estas pensando?"></textarea>
+						
+						<button id="borrar" type="submit" class="btn btn-success btn-lg btn-block mt-3">Envia tu twett</button>
+					</form><!--fin form-->
 				</div><!--fin tweet__cajform-->
 			</div><!--fin col tweet__formulario-->
 
@@ -90,30 +90,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<script src="assests/js/jquery.js"></script>
-
-
-
-
-
-
-
-
-
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>

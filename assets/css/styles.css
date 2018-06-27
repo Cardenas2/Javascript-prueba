@@ -39,6 +39,10 @@ header{
 
 
 }
+
+.tweet__cajpubli{
+	margin-bottom: 1em;
+}
 .tweet__cajpubli{
 	border-radius: 5px;
 	border:1px solid #EBEFEE;
@@ -73,3 +77,4 @@ header{
 .tweet__cajpubli-grupoicon--rojo{
 	color:#E21512;
 }
+
