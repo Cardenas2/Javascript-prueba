@@ -49,7 +49,7 @@ $(document).ready(function(){
 				$(".tweet__publicaciones").prepend(post);
 
 				//para limpiar el formulario
-    			$(evt.currentTarget).get(0).reset();
+    			$(e.currentTarget).get(0).reset();
 	});  
 
 

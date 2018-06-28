@@ -73,9 +73,13 @@ header{
 	font-size: 1.5em;
 	margin:1em 0;
 	padding-right: 0.5em: 
+	color:#fff;
 }
 
 .tweet__cajpubli-grupoicon--rojo{
 	color:#E21512;
 }
 
+.tweet__cajpubli-grupoicon--azul{
+	color:#08B0D9;
+}
