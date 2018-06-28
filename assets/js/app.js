@@ -26,7 +26,7 @@ $(document).ready(function(){
 		var enviarMensaje = $ ('#enviar').val(); 
 		var post=`<div class="tweet__cajpubli">
 					<div class="media">
-						<img class="align-self-end mr-3 tweet__cajpubli-img" src="${imagenUsuario}">
+						<img class="align-self-end mr-3 tweet__cajpubli-img" src="${ imagenUsuario}">
 						<div class="media-body tweet__cajpubli-nombre">
 							<h4 class="mt-5 pt-3 ">${nombrePropio}</h4>
 							
@@ -47,6 +47,9 @@ $(document).ready(function(){
 				</div><!--fin tweet__cajpubli-->`;
 
 				$(".tweet__publicaciones").prepend(post);
+
+				//para limpiar el formulario
+    			$(evt.currentTarget).get(0).reset();
 	});  
 
 
