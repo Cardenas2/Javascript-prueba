@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//Aqui va a ejecutarse el codigo una vez que el documento este ready(listo o cargado)
-
+	
 	$("#uploader").change(function(evt){
 
 		console.log("se cambio a imagen");
@@ -59,7 +59,12 @@ $(document).ready(function(){
 				evt.stopPropagation();
 				$(this).toggleClass("tweet__like--rojo");
 				console.log(this);
+
+				$(".contador").
+
 		});
+
+
 
 		
 
