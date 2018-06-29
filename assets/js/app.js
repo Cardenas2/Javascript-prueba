@@ -37,7 +37,7 @@ $(document).ready(function(){
 					</p>
 					<div class="row tweet__cajpubli-grupoicon">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 tweet__cajpubli-icono">
-							<span><i class="tweet__like fas fa-heart"></i></i>1</span>
+							<i class="tweet__like fas fa-heart"></i><span class="contador">0</span>
 						</div>
 				
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 tweet__cajpubli-icono">
@@ -60,7 +60,8 @@ $(document).ready(function(){
 				$(this).toggleClass("tweet__like--rojo");
 				console.log(this);
 
-				$(".contador").
+				var counter = $('.contador').val();
+				console.log(counter);
 
 		});
 
