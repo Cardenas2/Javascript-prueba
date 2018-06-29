@@ -19,14 +19,14 @@ $(document).ready(function(){
 	$("#formulario").submit(function(e){
 		e.preventDefault();//previene el comportamiento por defecto de un elemento y asi no se recargaa pagina
 
-		var imagenUsuario = $('#imagen').val();
+		var imagenUsuario = $("#imagen").attr("src");	
 		var elegirImagen = $('#uploader').val();
 		var nombrePropio = $ ('#nombre').val();
 		var pensamiento = $ ('#mensaje').val();
 		var enviarMensaje = $ ('#enviar').val(); 
 		var post=`<div class="tweet__cajpubli">
 					<div class="media">
-						<img class="align-self-end mr-3 tweet__cajpubli-img" src="${ imagenUsuario}">
+						<img class="align-self-end mr-3 tweet__cajpubli-img" src="${imagenUsuario}">
 						<div class="media-body tweet__cajpubli-nombre">
 							<h4 class="mt-5 pt-3 ">${nombrePropio}</h4>
 							
@@ -37,7 +37,7 @@ $(document).ready(function(){
 					</p>
 					<div class="row tweet__cajpubli-grupoicon">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 tweet__cajpubli-icono">
-							<span><i class="fas fa-heart"></i></i>1</span>
+							<span><i class="tweet__like fas fa-heart"></i></i>1</span>
 						</div>
 				
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 tweet__cajpubli-icono">
@@ -50,11 +50,15 @@ $(document).ready(function(){
 
 				//para limpiar el formulario
     			$(e.currentTarget).get(0).reset();
+
 	});  
 
 
-
-
+		$(".tweet__like").click(function(evt){
+				evt.preventDefault();
+				evt.stopPropagation();
+				$(this).toggleClass("tweet__like--rojo");
+		});
 
 
 
