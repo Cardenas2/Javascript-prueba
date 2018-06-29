@@ -60,8 +60,9 @@ $(document).ready(function(){
 				$(this).toggleClass("tweet__like--rojo");
 				console.log(this);
 
-				var counter = $('.contador').val();
-				console.log(counter);
+				var contador= $(this).parent().find(".contador").text();
+				var nuevocontador= parseInt(contador) +1;
+				$(this).parent().find(".contador").text(nuevocontador);
 
 		});
 
