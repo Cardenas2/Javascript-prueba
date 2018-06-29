@@ -60,6 +60,9 @@ $(document).ready(function(){
 				$(this).toggleClass("tweet__like--rojo");
 		});
 
+		$(this).parent(function(evt) {
+			
+		});
 
 
 
